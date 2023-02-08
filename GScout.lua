@@ -3,7 +3,7 @@ repeat wait() until game:IsLoaded()
 getgenv().GoldenPerks = {"Scout"}
 getgenv().IsMultiStrat = true
 getgenv().Maps = {["Simplicity"] = {'Accelerator', 'Commander', 'Scout', 'DJ Booth', 'Farm'}, ['Night Station'] = {'Accelerator', 'Commander', 'Scout', 'DJ Booth', 'Farm'}, ['Winter Abyss'] = {'Accelerator', 'Commander', 'Scout', 'DJ Booth', 'Farm'}, }
-local maps = {"Call Of Arms", "Call Of Arms", "Call Of Arms", }
+local maps = {"Simplicity", "Night Station", "Winter Abyss", }
 if game.PlaceId == 3260590327 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/ckmhjvskfkmsStratFun2", true))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/asjhxnjfdStratFunJoin", true))()
