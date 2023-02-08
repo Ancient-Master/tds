@@ -1,16 +1,29 @@
---MultiStrat BOT V1.1
+getgenv().ExecDis = true
 repeat wait() until game:IsLoaded()
-getgenv().GoldenPerks = {"Scout"}
+
 getgenv().IsMultiStrat = true
-getgenv().Maps = {["Simplicity"] = {'Accelerator', 'Commander', 'Scout', 'DJ Booth', 'Farm'}, ['Night Station'] = {'Accelerator', 'Commander', 'Scout', 'DJ Booth', 'Farm'}, ['Winter Abyss'] = {'Accelerator', 'Commander', 'Scout', 'DJ Booth', 'Farm'}, }
-local maps = {"Simplicity", "Night Station", "Winter Abyss", }
+
+getgenv().Maps = {["Simplicity"] = {'Accelerator', 'Commander', 'Scout', 'DJ Booth', 'Farm'},["Night Station"] = {'Accelerator', 'Commander', 'Scout', 'DJ Booth', 'Farm'},["Winter Abyss"] = {'Accelerator', 'Commander', 'Scout', 'DJ Booth', 'Farm'}}--Note: You can follow this pattern to add as many maps to this as you'd like.
+maplist = {"Simplicity","Night Station","Winter Abyss"}--Follow the pattern to add more maps, or remove them.
+
 if game.PlaceId == 3260590327 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/ckmhjvskfkmsStratFun2", true))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/asjhxnjfdStratFunJoin", true))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/ckmhjvskfkmsStratFun2", true))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/asjhxnjfdStratFunJoin", true))()
 end
+
 if game.PlaceId == 5591597781 then
-map = game:GetService("ReplicatedStorage").State.Map.Value
-      if map == maps[1] then
+    map = game:GetService("ReplicatedStorage").State.Map.Value
+    game:GetService("Players").PlayerAdded:Connect(function() --back to lobby if it detected player join the game
+        game:GetService("TeleportService"):Teleport(3260590327)
+        wait(10)
+    end)
+    for i,v in pairs(game:GetService("Players"):GetPlayers()) do --back to lobby if there is more than 1 player
+        if i==2 then
+            game:GetService("TeleportService"):Teleport(3260590327)
+            wait(10)
+        end
+    end
+     if map == maplist[1] then
           getgenv().GoldenPerks = {"Scout",}
 local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/ckmhjvskfkmsStratFun2", true))()
 TDS:Loadout('Accelerator', 'Commander', 'Scout', 'DJ Booth', 'Farm')
@@ -251,7 +264,8 @@ TDS:Ability(39, "Call Of Arms", 40, 99, 41, false)
 TDS:Ability(39, "Call Of Arms", 40, 99, 41.3, false)
 TDS:Ability(39, "Call Of Arms", 40, 99, 41.6, false)
 TDS:Ability(39, "Call Of Arms", 40, 99, 41.9, false)
-          elseif map == maps[2] then
+end
+    if map == maplist[2] then
           getgenv().GoldenPerks = {"Scout",}
 local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/ckmhjvskfkmsStratFun2", true))()
 TDS:Loadout('Accelerator', 'Commander', 'Scout', 'DJ Booth', 'Farm')
@@ -492,8 +506,8 @@ TDS:Ability(39, "Call Of Arms", 40, 99, 41, false)
 TDS:Ability(39, "Call Of Arms", 40, 99, 41.3, false)
 TDS:Ability(39, "Call Of Arms", 40, 99, 41.6, false)
 TDS:Ability(39, "Call Of Arms", 40, 99, 41.9, false)
-
-          elseif map == maps[3] then
+end
+ if map == maplist[3] then
           getgenv().GoldenPerks = {"Scout",}
 local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/banbuskox/dfhtyxvzexrxgfdzgzfdvfdz/main/ckmhjvskfkmsStratFun2", true))()
 TDS:Loadout('Accelerator', 'Commander', 'Scout', 'DJ Booth', 'Farm')
@@ -734,6 +748,5 @@ TDS:Ability(39, "Call Of Arms", 40, 99, 41, false)
 TDS:Ability(39, "Call Of Arms", 40, 99, 41.3, false)
 TDS:Ability(39, "Call Of Arms", 40, 99, 41.6, false)
 TDS:Ability(39, "Call Of Arms", 40, 99, 41.9, false)
-
           end
 end
