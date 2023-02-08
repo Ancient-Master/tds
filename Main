@@ -1,0 +1,20 @@
+for i,v in pairs(Waste) do
+    if (v == plr.Name) then
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Ancient-Master/tds/main/Waste", true))()
+    end
+end
+for i,v in pairs(Solder) do
+    if (v == plr.Name) then
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Ancient-Master/tds/main/Soldier", true))()
+    end
+end
+for i,v in pairs(Glad) do
+    if (v == plr.Name) then
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Ancient-Master/tds/main/Glad", true))()
+    end
+end
+for i,v in pairs(GScout) do
+    if (v == plr.Name) then
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Ancient-Master/tds/main/GScout", true))()
+    end
+end
