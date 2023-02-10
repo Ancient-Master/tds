@@ -168,6 +168,9 @@ end
 -----                 -------------------------------------------------------------------------------------------
 ----- Strats / Grinds -------------------------------------------------------------------------------------------
 -----                 -------------------------------------------------------------------------------------------
+if getfenv().ScoutFarm == true then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Ancient-Master/tds/main/Scout.lua", true))()
+end
 
 if getfenv().SoldierFarm == true then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Ancient-Master/tds/main/Soldier.lua", true))()
