@@ -40,7 +40,7 @@ end
 if getfenv().Ace_Pilot == false and getfenv().WasteLand == true then
     --
     if game:GetService("Players").LocalPlayer.Coins.Value > 1499 then
-        local a="Shop"local b="Purchase"local c="tower"local d="Ace_Pilot"game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer(a,b,c,d)
+        local a="Shop"local b="Purchase"local c="tower"local d="Ace Pilot"game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer(a,b,c,d)
     --
     end
 end
@@ -64,7 +64,7 @@ end
 if getfenv().Military_Base == false and getfenv().Hardcore == true then
     --
     if game:GetService("Players").LocalPlayer.Coins.Value > 2499 then
-        local a="Shop"local b="Purchase"local c="tower"local d="Military_Base"game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer(a,b,c,d)
+        local a="Shop"local b="Purchase"local c="tower"local d="Military Base"game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer(a,b,c,d)
     --
     end
 end
