@@ -38,38 +38,50 @@ if getfenv().Soldier == false then
 end
 
 if getfenv().Ace_Pilot == false and getfenv().WasteLand == true then
+    --
     if game:GetService("Players").LocalPlayer.Coins.Value > 1499 then
         local a="Shop"local b="Purchase"local c="tower"local d="Ace_Pilot"game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer(a,b,c,d)
+    --
     end
 end
 
 if getfenv().Farm == false and getfenv().WasteLand == true then
+    --
     if game:GetService("Players").LocalPlayer.Coins.Value > 1999 then
         local a="Shop"local b="Purchase"local c="tower"local d="Farm"game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer(a,b,c,d)
+    --
     end
 end
 
 if getfenv().Freezer == false and getfenv().WasteLand == true then
+    --
     if game:GetService("Players").LocalPlayer.Coins.Value > 799 then
         local a="Shop"local b="Purchase"local c="tower"local d="Freezer"game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer(a,b,c,d)
+    --
     end
 end
 
 if getfenv().Military_Base == false and getfenv().Hardcore == true then
+    --
     if game:GetService("Players").LocalPlayer.Coins.Value > 2499 then
         local a="Shop"local b="Purchase"local c="tower"local d="Military_Base"game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer(a,b,c,d)
+    --
     end
 end
 
 if getfenv().Accelerator == false then
+    --
     if game:GetService("Players").LocalPlayer.Gems.Value > 2499 then
         local a="Shop"local b="Purchase"local c="tower"local d="Accelerator"game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer(a,b,c,d)
+    --
     end
 end
 
 if getfenv().Engineer == false then
+    --
     if game:GetService("Players").LocalPlayer.Gems.Value > 4499 then
         local a="Shop"local b="Purchase"local c="tower"local d="Engineer"game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer(a,b,c,d)
+    --
     end
 end
 
@@ -150,6 +162,10 @@ if getfenv().Gladfarm == true then
     getfenv().WasteLandGrind = false
     --
 end
+
+-----                 -------------------------------------------------------------------------------------------
+----- Strats / Grinds -------------------------------------------------------------------------------------------
+-----                 -------------------------------------------------------------------------------------------
 
 if getfenv().SoldierFarm == true then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Ancient-Master/tds/main/Soldier.lua", true))()
