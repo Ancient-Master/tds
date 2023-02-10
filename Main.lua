@@ -91,9 +91,12 @@ wait(3)
 
 if getfenv().Hardcore == true and getfenv().Accelerator == true and getfenv().Engineer == true then
     
-    getfenv().Gemsdone = true
+        getfenv().Gemsdone = true
 
+else 
+        getfenv().Gemsdone = false
 end
+
 
 
 if getfenv().Soldier == false then
