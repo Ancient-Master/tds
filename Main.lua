@@ -1,10 +1,10 @@
-
+pcall(function ()
 if getfenv().AutoRejoin == true then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Ancient-Master/tds/main/Auto_Rejoin.lua", true))()
     end
     if getfenv().Nexus == true then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Ancient-Master/tds/main/Nexus.lua", true))()
-wait(2)
+wait(1)
         repeat task.wait() until game:IsLoaded() and Nexus
     
     if not Nexus.IsConnected then Nexus.Connected:Wait() end
@@ -12,6 +12,7 @@ wait(2)
     else
         repeat task.wait() until game:IsLoaded()
     end
+end)
 local TowersUHave = {}
 for i,v in next, game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer("Session", "Search", "Inventory.Troops") do
         table.insert(TowersUHave, i)
