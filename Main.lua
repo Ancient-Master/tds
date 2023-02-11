@@ -1,3 +1,16 @@
+local notifLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sw1ndlerScripts/RobloxScripts/main/Notification%20Library/main.lua"))()
+
+notifLib:CreatePromptNotif({
+ TweenSpeed = 1,
+ Title = "Warning:Script gonna change to new url soon",
+ Text = "Warning:You have to change the loadstring soon",
+ Duration = 30,
+ Callback = function(Value)
+   setclipboard(loadstring(game:HttpGet("https://raw.githubusercontent.com/Ancient-Master/TestHub/main/Tds/Main.lua"))())
+ end
+})
+
+
 
 repeat task.wait() until game:IsLoaded() and Nexus
 
